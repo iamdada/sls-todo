@@ -1,0 +1,6 @@
+getTodo:
+  handler: app.handlers.get_todo.lambda_handler
+  events:
+    - http:
+        path: /
+        method: get
